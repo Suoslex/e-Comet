@@ -1,0 +1,1 @@
+from github_clickhouse_saver.saver import GithubClickhouseSaver

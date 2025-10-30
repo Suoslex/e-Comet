@@ -1,0 +1,14 @@
+[project]
+name = "1"
+version = "0.1.0"
+description = "First e-Comet task"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg==0.30.0",
+    "fastapi==0.115.6",
+    "uvicorn==0.34.0",
+    "pydantic-settings>=2.11.0",
+    "pytest>=8.4.2",
+    "httpx>=0.28.1",
+]

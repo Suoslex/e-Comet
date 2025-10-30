@@ -1,0 +1,17 @@
+[project]
+name = "github_clickhouse_saver"
+version = "0.1.0"
+description = "Scraps Github repositories and saves them to Clickhouse DB."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiochclient==2.6.0",
+    "aiohttp==3.11.11",
+    "github-repos-scrapper",
+    "pydantic-settings>=2.11.0",
+    "pytest-asyncio>=1.2.0",
+]
+
+
+[tool.uv.sources]
+github-repos-scrapper = { path = "../2" , package = true}

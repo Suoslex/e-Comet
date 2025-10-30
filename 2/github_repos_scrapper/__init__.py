@@ -1,0 +1,1 @@
+from github_repos_scrapper.scrapper import GithubReposScrapper

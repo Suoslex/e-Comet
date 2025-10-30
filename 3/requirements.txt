@@ -1,0 +1,5 @@
+aiohttp==3.11.11
+aiochclient==2.6.0
+pytest-asyncio==1.2.0
+pydantic-settings==2.11.0
+../2

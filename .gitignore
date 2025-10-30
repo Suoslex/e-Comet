@@ -1,0 +1,9 @@
+*.docx
+**/.venv
+**/.idea
+**/.env
+**/__pycache__
+**/build
+**/*.egg-info
+**/test.py
+**/.DS_Store
