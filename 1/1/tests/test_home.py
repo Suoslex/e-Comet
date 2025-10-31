@@ -1,7 +1,7 @@
 import asyncpg
 import pytest
 from fastapi.testclient import TestClient
-from unittest.mock import patch, AsyncMock
+from unittest.mock import AsyncMock
 
 from db_version_app.db import get_pg_connection
 
@@ -12,9 +12,6 @@ def test_main_api_returns_200(test_client: TestClient):
 
 
 def test_main_api_returns_db_version(test_client: TestClient):
-    mock_db = AsyncMock()
-    mock_db.fetchval.return_value = "1.2.3"
-    test_client.app.dependency_overrides[get_pg_connection] = lambda: mock_db
     response = test_client.get("/api/db_version")
     assert response.status_code == 200
     assert response.json() == "1.2.3"

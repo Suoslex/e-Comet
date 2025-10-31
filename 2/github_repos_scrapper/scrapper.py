@@ -86,8 +86,8 @@ class GithubReposScrapper:
         """
         logger.info(f"Getting top {limit} repositories on Github")
         return [
-            r
-            async for r in self.iter_repositories(
+            repository
+            async for repository in self.iter_repositories(
                 limit=limit,
                 page_size=min(limit, 100)
             )
